@@ -1,0 +1,72 @@
+*{
+    /* обращение ко всему коду */
+    padding: 0;
+    /* отступ от границ */
+    margin: 0;
+    /* отступ */
+    box-sizing: border-box;
+    /* меняет способ расчета елемента */
+}
+header{
+    height: 20vh;
+    /* меняет высоту */
+    background-color: rgba(71, 61, 139, 0.199);
+    /* меняет цвет фона */
+}
+main{
+    min-height: 200vh;
+     /* меняет высоту */
+    background-color: rgba(0, 100, 0, 0.24);
+      /* меняет цвет фона */
+}
+footer{
+    height: 30vh;
+     /* меняет высоту */
+    background-color: rgba(71, 61, 139, 0.199);
+      /* меняет цвет фона */
+}
+body{
+    padding-top: 20vh;
+    /*отступы между словами */
+  
+
+    background-attachment: fixed;
+/* фиксация фона сайта */
+}
+
+
+.row{
+    height: 100%;
+    /* изменяет высоту */
+}
+.row>div{
+    /* обращение к дивам класса row */
+    display: flex;
+    /* выравнивание в строчку */
+    align-items: center;
+    /* совмещает колонны 1 2 3 и 4 */
+    justify-content: center ;
+    /* определяет как браузер распределяет пространство вокруг элементов вдоль главной оси контейнера*/
+}
+.cards,.col-4{
+    /* обращение к классам cards col-4 */
+    display: flex;
+    /* выравнивание в срочку */
+    flex-wrap: wrap;
+    /* задает рассановку блоков по главной оси */
+    justify-content: center;
+    /* определяет как браузер распределяет пространство вокруг элементов вдоль главной оси контейнера*/
+}
+
+
+.left-section, .right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    gap: 15px;
+}
+.card{
+    border-radius: 20px !important;
+    margin-top: 10px;
+    width: 30vw !important;
+}
